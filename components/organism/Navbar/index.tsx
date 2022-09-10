@@ -5,7 +5,7 @@ import {
 } from '@mui/material';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import MenuIcon from '@mui/icons-material/Menu';
-import useStyles from '../../../styles/header.js';
+import useStyles from './style';
 
 type Anchor = 'right';
 

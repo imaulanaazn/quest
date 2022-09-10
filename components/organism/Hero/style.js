@@ -19,11 +19,11 @@ export default makeStyles(() => ({
     '& h1.title': {
       fontWeight: '700',
       lineHeight: '1',
-      fontSize: '4rem',
+      fontSize: '3.5rem',
     },
     '& div': {
       alignItems: 'center',
-      marginTop: '1.4rem',
+      marginTop: '3rem',
       '& p.moto': {
         fontSize: '1.6rem',
         fontWeight: '600',
@@ -37,7 +37,7 @@ export default makeStyles(() => ({
         textTransform: 'none',
         fontSize: '1.4rem',
         fontWeight: '600',
-        marginTop: '2rem',
+        marginTop: '3rem',
       },
     },
   },

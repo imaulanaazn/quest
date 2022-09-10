@@ -2,7 +2,7 @@ import { makeStyles } from '@mui/styles';
 
 export default makeStyles(() => ({
   header: {
-    width: '100vw',
+    width: '100%',
     backgroundColor: '#171717',
     color: 'white',
     display: 'flex',

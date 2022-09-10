@@ -1,8 +1,8 @@
 import React from 'react';
 import { Box, Typography, Button } from '@mui/material';
-import useStyles from './hero';
+import useStyles from './style';
 
-export default function index() {
+export default function Hero() {
   const classes = useStyles();
   return (
     <Box className={`${classes.heroContainer} container`}>
