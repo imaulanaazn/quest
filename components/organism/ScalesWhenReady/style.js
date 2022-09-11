@@ -15,7 +15,7 @@ export default makeStyles(() => ({
           fontSize: '3.5rem',
           fontWeight: '700',
           lineHeight: '1',
-          marginTop: '2rem',
+          margin: '2rem 0',
           '& span': {
             fontSize: '3.5rem',
             fontWeight: '700',
@@ -30,7 +30,7 @@ export default makeStyles(() => ({
 
           },
           '& h2': {
-            fontSize: '.8rem',
+            fontSize: '1rem',
             marginLeft: '.9rem',
           },
         },
@@ -39,6 +39,15 @@ export default makeStyles(() => ({
         width: '100%',
         margin: '3rem 0',
       },
+    },
+    '& button.signup__btn': {
+      borderRadius: '10px',
+      border: '2px solid #FE8888',
+      color: 'white',
+      textTransform: 'none',
+      fontSize: '1.5rem',
+      fontWeight: '600',
+      padding: '.5rem 2rem',
     },
   },
 
@@ -74,6 +83,11 @@ export default makeStyles(() => ({
         display: 'flex',
         justifyContent: 'space-between',
         gap: '3rem',
+      },
+      '& .text .signup__btn': {
+        padding: '.2rem 1.2rem',
+        fontSize: '1.3rem',
+        fontWeight: '500',
       },
     },
   },

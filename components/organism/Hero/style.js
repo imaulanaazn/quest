@@ -33,7 +33,7 @@ export default makeStyles(() => ({
         color: 'white',
         height: '3.5rem',
         border: '3px solid #FE8888',
-        borderRadius: '8px',
+        borderRadius: '10px',
         textTransform: 'none',
         fontSize: '1.4rem',
         fontWeight: '600',
@@ -56,7 +56,7 @@ export default makeStyles(() => ({
         },
         '& button.signup__btn': {
           border: '3px solid #FE8888',
-          borderRadius: '6px',
+          borderRadius: '10px',
           height: '3rem',
           fontSize: '1.2rem',
         },

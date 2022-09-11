@@ -14,7 +14,7 @@ export default makeStyles(() => ({
         width: '1.4rem',
       },
       '& h2': {
-        fontSize: '.8rem',
+        fontSize: '1rem',
         marginLeft: '.9rem',
       },
     },
@@ -31,11 +31,11 @@ export default makeStyles(() => ({
       },
     },
     '& .learn__more': {
-      fontSize: '1.6rem',
+      fontSize: '1.5rem',
       fontWeight: '500',
       margin: '1rem 0',
       '& span': {
-        fontSize: '1.6rem',
+        fontSize: '1.5rem',
         fontWeight: '500',
         color: '#FE8888',
       },

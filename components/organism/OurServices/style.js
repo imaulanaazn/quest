@@ -30,7 +30,7 @@ export default makeStyles(() => ({
 
           },
           '& h2': {
-            fontSize: '.8rem',
+            fontSize: '1rem',
             marginLeft: '.9rem',
           },
         },

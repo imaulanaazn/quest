@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, Button } from '@mui/material';
 import Service from '../../molecules/Service';
 import useStyles from './style';
 
@@ -22,6 +22,9 @@ export default function ScalesWhenReady() {
               {' '}
               and see for yourself
             </Typography>
+            <Button variant="outlined" className="signup__btn">
+              Sign Up Now
+            </Button>
           </Box>
           <img className="dashboard__thumb" src="images/Code and Export.png" alt="dashboard" />
         </Box>
