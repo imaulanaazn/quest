@@ -9,13 +9,6 @@ export default makeStyles(() => ({
   builWithContent: {
     position: 'relative',
     color: 'white',
-    '& img.bolt__icon': {
-      width: '2rem',
-      position: 'absolute',
-      top: '0',
-      left: '0',
-      transform: 'translate(-110%,10%)',
-    },
     '& h1.title': {
       fontWeight: '700',
       lineHeight: '1',
@@ -43,11 +36,12 @@ export default makeStyles(() => ({
         fontSize: '1.4rem',
         fontWeight: '600',
         marginTop: '3rem',
+        padding: '5px 15px',
       },
     },
     '& .sideThumb': {
+      width: '100%',
       clipPath: 'polygon(0 18%, 100% 0, 100% 100%, 0% 100%)',
-
       borderTopRightRadius: '10px',
       '& img': {
         width: '100%',
@@ -73,6 +67,8 @@ export default makeStyles(() => ({
         },
         '& button.signup__btn': {
           margin: '0',
+          height: '3rem',
+          fontSize: '1.2rem',
         },
       },
     },

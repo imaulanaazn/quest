@@ -9,7 +9,6 @@ export default function BuildWithTools() {
     <Box className={`${classes.buildWithContainer} container`}>
       <Box className={classes.builWithContent}>
         <Box className="text">
-          <img className="bolt__icon" src="images/bolt.svg" alt="" />
           <Typography className="title" variant="h1">
             <Typography variant="caption">Build </Typography>
             with the tools you love

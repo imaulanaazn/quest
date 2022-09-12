@@ -44,6 +44,7 @@ export default makeStyles(() => ({
         fontSize: '1.4rem',
         fontWeight: '600',
         marginTop: '3rem',
+        padding: '5px 15px',
       },
     },
   },
@@ -54,11 +55,12 @@ export default makeStyles(() => ({
         marginTop: '2rem',
         '& p.moto': {
           width: '100%',
-          fontSize: '1.6rem',
+          fontSize: '1.4rem',
         },
         '& button.signup__btn': {
           marginTop: '2rem',
-          padding: '0',
+          height: '3rem',
+          fontSize: '1.2rem',
         },
       },
     },
@@ -70,12 +72,12 @@ export default makeStyles(() => ({
         display: 'flex',
         '& p.moto': {
           width: 'initial',
-          fontSize: '1.5rem',
+          fontSize: '1.3rem',
           maxWidth: '38rem',
         },
         '& button.signup__btn': {
           margin: '0',
-          marginLeft: '3rem',
+          marginLeft: '2rem',
           minWidth: '180px',
         },
       },
