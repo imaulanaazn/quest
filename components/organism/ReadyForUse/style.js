@@ -9,7 +9,6 @@ export default makeStyles(() => ({
   },
   readyForContent: {
     '& .dashboard__preview': {
-      borderBottom: '3px solid #2E2E2E',
       '& .text': {
         '& .title': {
           fontSize: '3.5rem',
