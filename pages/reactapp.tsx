@@ -13,6 +13,7 @@ import CustomizeDesign from '../components/organism/CustomizeDesign';
 import Features from '../components/organism/Features';
 import Faq from '../components/organism/Faq';
 import JoinTheFuture from '../components/organism/JoinTheFuture';
+import Footer from '../components/organism/Footer';
 
 export default function reactapp() {
   return (
