@@ -13,6 +13,7 @@ export default makeStyles(() => ({
     '& img.header__logo': {
       width: '7rem',
     },
+
   },
   menuIcon: {
     fontSize: '2.5rem',
@@ -33,6 +34,7 @@ export default makeStyles(() => ({
   navItem: {
     textTransform: 'none',
     fontSize: '.9rem',
+    textDecoration: 'none',
     color: 'white',
     margin: '0 .5rem',
     padding: '0',
@@ -43,10 +45,13 @@ export default makeStyles(() => ({
   navItemDrop: {
     '& .MuiPaper-root': {
       backgroundColor: '#171717',
-      '& li.MuiButtonBase-root': {
-        color: 'white',
+      '& li': {
         '&:hover': {
           backgroundColor: '#979797',
+        },
+        '& a': {
+          color: 'white',
+          textDecoration: 'none',
         },
       },
     },
@@ -57,6 +62,7 @@ export default makeStyles(() => ({
       margin: '0 .8rem',
       color: 'white',
       fontSize: '.9rem',
+      textDecoration: 'none',
     },
     '& a.auth-btn.signup-btn': {
       color: '#FE8888',

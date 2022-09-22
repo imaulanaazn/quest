@@ -4,7 +4,7 @@ export default makeStyles(() => ({
   footerContainer: {
     backgroundColor: '#171717',
     color: 'white',
-    padding: '4rem 6rem 10rem',
+    padding: '10rem 6rem 10rem',
   },
   footerContent: {
     marginTop: '1rem',
@@ -44,7 +44,7 @@ export default makeStyles(() => ({
 
   '@media (min-width: 600px)': {
     footerContainer: {
-      padding: '4rem 3rem 10rem',
+      padding: '10rem 3rem 10rem',
       display: 'flex',
       '& :first-child': {
         flex: '1',
@@ -74,7 +74,7 @@ export default makeStyles(() => ({
 
   '@media (min-width: 900px)': {
     footerContainer: {
-      padding: '4rem 6rem 10rem',
+      padding: '10rem 6rem 10rem',
     },
     footerContent: {
       flex: 'initial',

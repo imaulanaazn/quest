@@ -76,7 +76,7 @@ export default makeStyles(() => ({
     },
   },
 
-  '@media (min-width)': {
+  '@media (min-width: 900px)': {
     '& .text': {
       '& .title': {
         maxWidth: '29rem',

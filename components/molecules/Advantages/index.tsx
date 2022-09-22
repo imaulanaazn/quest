@@ -12,7 +12,7 @@ const useStyles = makeStyles(() => ({
     '& h2.service__card': {
       fontWeight: '600',
       fontSize: '1.2rem',
-      margin: '1.8rem 0',
+      padding: '1.8rem 0',
     },
     '& p': {
       fontWeight: '500',
@@ -34,7 +34,7 @@ const useStyles = makeStyles(() => ({
       flex: '1',
       '& h2.service__card': {
         fontSize: '1.4rem',
-        margin: '1.2rem 0',
+        padding: '1.2rem 0',
       },
       '& p': {
         fontSize: '1rem',

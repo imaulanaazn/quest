@@ -1,10 +1,11 @@
 import React from 'react';
-import Link from '@mui/material/Link';
+// import Link from '@mui/material/Link';
 import {
   Box, Button, Menu, MenuItem, Drawer, List, ListItem, ListItemButton, ListItemText,
 } from '@mui/material';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import MenuIcon from '@mui/icons-material/Menu';
+import Link from 'next/link';
 import useStyles from './style';
 
 type Anchor = 'right';
@@ -44,6 +45,7 @@ export default function Navbar() {
 
   const list = (anchor: Anchor) => (
     <Box
+
       sx={{ width: 250 }}
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
@@ -74,6 +76,12 @@ export default function Navbar() {
               <MenuIcon className={classes.menuIcon} />
             </Button>
             <Drawer
+              PaperProps={{
+                sx: {
+                  backgroundColor: '#171717',
+                  color: 'white',
+                },
+              }}
               anchor={anchor}
               open={state[anchor]}
               onClose={toggleDrawer(anchor, false)}
@@ -107,18 +115,32 @@ export default function Navbar() {
             'aria-labelledby': 'basic-button',
           }}
         >
-          <MenuItem onClick={handleClose}>React components</MenuItem>
-          <MenuItem onClick={handleClose}>Websites</MenuItem>
-          <MenuItem onClick={handleClose}>Plugin for Figma</MenuItem>
-          <MenuItem onClick={handleClose}>Docs</MenuItem>
+          <MenuItem onClick={handleClose}>
+            <Link href="/reactapp">React components</Link>
+          </MenuItem>
+          <MenuItem onClick={handleClose}>
+            <Link href="/offer">Websites</Link>
+          </MenuItem>
+          <MenuItem onClick={handleClose}>
+            <Link href="/figma_plugin">Plugin for Figma</Link>
+          </MenuItem>
+          <MenuItem onClick={handleClose}>
+            <Link href="/">Docs</Link>
+          </MenuItem>
         </Menu>
-        <Link className={classes.navItem} href="/" underline="none">Pricing</Link>
+        <Link href="/">
+          <a className={classes.navItem}>Pricing</a>
+        </Link>
       </Box>
 
       {/* SIGN IN AND SIGN UP MENU */}
       <Box className={`${classes.authMenu}`}>
-        <Link className="auth-btn login-btn" href="/" underline="none">Log In</Link>
-        <Link className="auth-btn signup-btn" href="/" underline="none">Sign Up</Link>
+        <Link href="/">
+          <a className="auth-btn login-btn">Log In</a>
+        </Link>
+        <Link href="/">
+          <a className="auth-btn signup-btn">Sign Up</a>
+        </Link>
       </Box>
     </Box>
   );

@@ -5,7 +5,6 @@ export default makeStyles(() => ({
     backgroundColor: '#171717',
     color: 'white',
     paddingTop: '6rem',
-    paddingBottom: '6rem',
     '& .subtitle': {
       display: 'flex',
       alignItems: 'center',
