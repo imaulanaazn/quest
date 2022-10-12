@@ -57,51 +57,71 @@ export default makeStyles(() => ({
   },
 
   '@media (min-width:600px)': {
+    heroContainer: {
+      paddingTop: '80px',
+    },
     heroContent: {
+      '& h1.title': {
+        fontSize: '64px',
+        lineHeight: '64px',
+        '&.highlighted': {
+          fontSize: '64px',
+          lineHeight: '64px',
+        },
+      },
       '& img.bolt__icon': {
         width: '2rem',
-        transform: 'translate(-110%,10%)',
+        transform: 'translate(-140%,10%)',
       },
       '& div': {
+        marginTop: '15px',
         '& p.moto': {
-          fontSize: '1.4rem',
-          fontWeight: '500',
-          width: '65%',
+          fontWeight: '700',
+          fontSize: '20px',
+          lineHeight: '28px',
+          maxWidth: '420px',
         },
         '& button.signup__btn': {
-          border: '3px solid #FE8888',
-          borderRadius: '10px',
-          height: '3rem',
-          fontSize: '1.2rem',
+          width: '183px',
+          height: '52px',
+          borderRadius: '8px',
+          fontSize: '20px',
         },
       },
 
     },
   },
 
-  '@media (min-width:900px)': {
+  '@media (min-width:1200px)': {
     heroContent: {
       '& img.bolt__icon': {
-        width: '2.4rem',
+        width: '50px',
         transform: 'translate(-140%,10%)',
       },
       '& h1.title': {
-        fontWeight: '700',
-        lineHeight: '1',
-        fontSize: '5.5rem',
+        fontSize: '110px',
+        lineHeight: '96px',
+        '&.highlighted': {
+          fontSize: '110px',
+          lineHeight: '96px',
+        },
       },
       '& div': {
+        marginTop: '26px',
         display: 'flex',
         alignItems: 'center',
         '& p.moto': {
-          fontSize: '1.3rem',
-          fontWeight: '500',
-          width: '55%',
+          fontWeight: '600',
+          fontSize: '24px',
+          lineHeight: '34px',
+          maxWidth: '670px',
         },
         '& button.signup__btn': {
-          fontSize: '1.1rem',
           marginTop: '0',
-          marginLeft: '2rem',
+          width: '180px',
+          height: '52px',
+          fontSize: '20px',
+          marginLeft: '36px',
         },
       },
     },

@@ -10,7 +10,6 @@ export default makeStyles(() => ({
     '& .dashboard__preview': {
       borderBottom: '3px solid #2E2E2E',
       '& .text': {
-
         '& .title': {
           fontSize: '3.5rem',
           fontWeight: '700',
@@ -40,6 +39,10 @@ export default makeStyles(() => ({
         margin: '3rem 0',
       },
     },
+  },
+
+  '@media (min-width:600px)': {
+
   },
 
   // STYLE WHEN SCREEN SIZE IS > 900px
