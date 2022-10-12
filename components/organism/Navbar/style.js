@@ -8,21 +8,19 @@ export default makeStyles(() => ({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
-    paddingTop: '.5rem',
-    paddingBottom: '.5rem',
+    padding: '17px 20px 17px 20px',
     '& img.header__logo': {
-      width: '7rem',
+      width: '147px',
     },
 
   },
   menuIcon: {
-    fontSize: '2.5rem',
+    fontSize: '2.9rem',
     color: 'white',
   },
   navbar: {
     display: 'none',
     alignItems: 'center',
-    flex: '1',
     justifyContent: 'center',
     '& button': {
       fontSize: '1rem',
@@ -34,12 +32,15 @@ export default makeStyles(() => ({
   navItem: {
     textTransform: 'none',
     fontSize: '.9rem',
+    fontWeight: '700',
     textDecoration: 'none',
     color: 'white',
-    margin: '0 .5rem',
     padding: '0',
     '&:hover': {
       backgroundColor: 'transparent',
+    },
+    '&.button': {
+      marginRight: '30px',
     },
   },
   navItemDrop: {
@@ -57,9 +58,12 @@ export default makeStyles(() => ({
     },
   },
   authMenu: {
+    textAlign: 'right',
+    flex: '1',
     display: 'none',
     '& a.auth-btn': {
-      margin: '0 .8rem',
+      marginLeft: '30px',
+      fontWeight: '700',
       color: 'white',
       fontSize: '.9rem',
       textDecoration: 'none',
@@ -72,47 +76,49 @@ export default makeStyles(() => ({
   // 600-900 px
   '@media (min-width:600px)': {
     header: {
+      padding: '13px 33px',
       display: 'flex',
-      paddingTop: '1rem',
-      paddingBottom: '1rem',
+      justifyContent: 'unset',
     },
     drawer: {
       display: 'none',
     },
     navbar: {
       display: 'flex',
+      marginLeft: '58px',
     },
     navItem: {
-      fontSize: '1rem',
+      fontSize: '16px',
+      '&.button': {
+        fontSize: '16px',
+      },
     },
     authMenu: {
       display: 'block',
       '& a.auth-btn': {
-        fontSize: '1rem',
+        fontSize: '16px',
       },
     },
   },
 
   // 900-1200 px
-  '@media (min-width:900px)': {
+  '@media (min-width:1200px)': {
     header: {
-      '& img.header__logo': {
-        width: '6rem',
-      },
+      padding: '14px 180px',
     },
     navbar: {
-      justifyContent: 'start',
-      marginLeft: '10rem',
+      marginLeft: '135px',
+    },
+    navItem: {
+      '&.button': {
+        marginRight: '39px',
+      },
+    },
+    authMenu: {
+      '& a.auth-btn': {
+        marginLeft: '33px',
+      },
     },
   },
 
-  // 1200-1536 px
-  '@media (min-width:1200px)': {
-
-  },
-
-  // > 1536  px
-  '@media (min-width:1536px)': {
-
-  },
 }));

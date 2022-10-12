@@ -13,7 +13,7 @@ export default function Hero() {
           <br />
           build your
         </Typography>
-        <Typography className="title" variant="h1">frontend</Typography>
+        <Typography className="title highlighted" variant="h1">frontend</Typography>
         <Box>
           <Typography className="moto">
             Generate React components with clean, extendable code.

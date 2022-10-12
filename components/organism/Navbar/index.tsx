@@ -45,7 +45,6 @@ export default function Navbar() {
 
   const list = (anchor: Anchor) => (
     <Box
-
       sx={{ width: 250 }}
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
@@ -84,7 +83,6 @@ export default function Navbar() {
               }}
               anchor={anchor}
               open={state[anchor]}
-              onClose={toggleDrawer(anchor, false)}
             >
               {list(anchor)}
             </Drawer>
@@ -95,14 +93,14 @@ export default function Navbar() {
       {/* NAVBAR MENU */}
       <Box component="nav" className={classes.navbar}>
         <Button
-          className={classes.navItem}
+          className={`${classes.navItem} button`}
           id="basic-button"
           aria-controls={open ? 'basic-menu' : undefined}
           aria-haspopup="true"
           aria-expanded={open ? 'true' : undefined}
           onClick={handleClick}
         >
-          Dashboard
+          Product
           <ArrowDropDownIcon />
         </Button>
         <Menu
@@ -129,17 +127,17 @@ export default function Navbar() {
           </MenuItem>
         </Menu>
         <Link href="/">
-          <a className={classes.navItem}>Pricing</a>
+          <a href="/#" className={classes.navItem}>Pricing</a>
         </Link>
       </Box>
 
       {/* SIGN IN AND SIGN UP MENU */}
       <Box className={`${classes.authMenu}`}>
         <Link href="/">
-          <a className="auth-btn login-btn">Log In</a>
+          <a href="/#" className="auth-btn login-btn">Log In</a>
         </Link>
         <Link href="/">
-          <a className="auth-btn signup-btn">Sign Up</a>
+          <a href="/#" className="auth-btn signup-btn">Sign Up</a>
         </Link>
       </Box>
     </Box>
