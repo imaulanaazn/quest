@@ -4,46 +4,63 @@ export default makeStyles(() => ({
   workFlowContainer: {
     backgroundColor: '#171717',
     color: 'white',
-    paddingTop: '9rem',
+    paddingTop: '90px',
   },
   workFlowContent: {
     '& .subtitle': {
       display: 'flex',
       alignItems: 'center',
       '& img': {
-        width: '1.4rem',
+        width: '14px',
+        height: '14px',
       },
       '& h2': {
-        fontSize: '1rem',
-        marginLeft: '.9rem',
+        fontWeight: '700',
+        fontSize: '12px',
+        marginLeft: '10px',
       },
     },
     '& .title': {
-      fontSize: '3.5rem',
-      marginTop: '2rem',
       fontWeight: '700',
-      lineHeight: '1',
-      maxWidth: '375px',
+      fontSize: '32px',
+      lineHeight: '30px',
+      marginTop: '18px',
+      maxWidth: '220px',
+      letterSpacing: '-2px',
       '& span': {
-        fontSize: '3.5rem',
         fontWeight: '700',
-        lineHeight: '1',
+        fontSize: '32px',
+        lineHeight: '30px',
+        letterSpacing: '-2px',
+        background: 'linear-gradient(270deg, #FE8888 27.16%, #8066FF 97.86%)',
+        WebkitBackgroundClip: 'text',
+        WebkitTextFillColor: 'transparent',
+        backgroundClip: 'text',
+        textFillColor: 'transparent',
       },
     },
     '& .learn__more': {
-      fontSize: '1.5rem',
-      fontWeight: '500',
-      margin: '1rem 0',
+      fontWeight: '600',
+      fontSize: '16px',
+      lineHeight: '22px',
+      letterSpacing: '0.0909091px',
+      margin: '18px 0 40px',
       '& span': {
-        fontSize: '1.5rem',
-        fontWeight: '500',
+        fontWeight: '600',
+        fontSize: '16px',
+        lineHeight: '22px',
+        letterSpacing: '0.0909091px',
         color: '#FE8888',
       },
     },
     '& .tab__btn__container': {
-      padding: '0 2rem',
+      padding: '0.5rem',
       '& button': {
         flex: '1',
+        fontWeight: '700',
+        fontSize: '11px',
+        lineHeight: '17px',
+        letterSpacing: '0.3px',
         color: '#FFFFFF80',
       },
       '& button.Mui-selected': {
@@ -60,9 +77,10 @@ export default makeStyles(() => ({
         width: '100%',
       },
       '& p': {
-        padding: '.8rem 1rem',
-        fontSize: '1.5rem',
-        lineHeight: '1.2',
+        padding: '1rem 1rem',
+        fontWeight: '600',
+        fontSize: '14px',
+        lineHeight: '16px',
       },
     },
 
@@ -71,31 +89,57 @@ export default makeStyles(() => ({
   '@media (min-width:600px)': {
     workFlowContent: {
       '& .title': {
-        maxWidth: '500px',
+        fontWeight: ' 700',
+        fontSize: '44px',
+        lineHeight: '42px',
+        maxWidth: '314px',
+        '& span': {
+          fontWeight: ' 700',
+          fontSize: '44px',
+          lineHeight: '42px',
+        },
       },
       '& .tab__btn__container': {
         margin: '1rem 0',
+        fontSize: '22px',
+        lineHeight: '26px',
+        padding: '0 52px',
+        '& button': {
+          fontSize: '13px',
+          lineHeight: '20px',
+        },
+      },
+      '& .tab__content': {
+        '& p': {
+          fontSize: '18px',
+          maxWidth: '410px',
+          lineHeight: '22px',
+        },
       },
     },
   },
 
   '@media (min-width:900px)': {
     workFlowContent: {
-      '& .title': {
-        maxWidth: '100%',
-        fontSize: '2.5rem',
-        '& span': {
-          fontSize: '2.5rem',
-        },
-      },
       '& .tab__btn__container': {
-        padding: '0 7rem',
+        padding: '0 10rem',
         '& .tab__content': {
           padding: '1rem 7rem',
         },
+        '& button': {
+          fontSize: '18px',
+          lineHeight: '28px',
+        },
+      },
+      '& .tab__content': {
+        '& p': {
+          fontSize: '22px',
+          lineHeight: '26px',
+          maxWidth: '500px',
+        },
       },
       '& div[role="tabpanel"]': {
-        padding: '1rem 7rem',
+        padding: '1rem 10rem',
         '& .MuiBox-root': {
           padding: '0',
         },

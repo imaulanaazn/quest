@@ -9,30 +9,43 @@ interface serviceProps{
 
 const useStyles = makeStyles(() => ({
   cardContainer: {
-    marginTop: '3rem',
+    marginTop: '25px',
     '& img': {
-      width: '2.5rem',
+      width: '30px',
+      height: '30px',
     },
     '& h2.service__card': {
-      fontWeight: '600',
-      fontSize: '2rem',
-      margin: '1.8rem 0',
+      fontWeight: ' 800',
+      fontSize: '20px',
+      margin: '20px 0',
     },
     '& p': {
-      fontWeight: '500',
-      fontSize: '1.5rem',
+      fontWeight: ' 600',
+      fontSize: '16px',
+    },
+  },
+  '@media (min-width:600px)': {
+    cardContainer: {
+      'h2.service__card': {
+        fontSize: '24px',
+        lineHeight: '28px',
+      },
+      '& p': {
+        fontSize: '20px',
+        lineHeight: '26px',
+        maxWidth: '520px',
+      },
     },
   },
   '@media (min-width:900px)': {
     cardContainer: {
       flex: '1',
-      marginTop: '3rem',
+      marginTop: '0',
       '& img': {
-        width: '1.3rem',
+        width: '20px',
       },
       '& h2.service__card': {
-        fontSize: '1.4rem',
-        margin: '1.2rem 0',
+        margin: '12px 0',
       },
       '& p': {
         fontSize: '1rem',

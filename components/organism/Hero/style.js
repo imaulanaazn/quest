@@ -4,7 +4,6 @@ export default makeStyles(() => ({
   heroContainer: {
     backgroundColor: '#171719',
     paddingTop: '50px',
-    paddingBottom: '5.5rem',
   },
   heroContent: {
     position: 'relative',

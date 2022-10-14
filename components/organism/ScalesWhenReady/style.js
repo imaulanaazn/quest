@@ -5,32 +5,39 @@ export default makeStyles(() => ({
   advantagesContainer: {
     backgroundColor: '#171717',
     color: 'white',
-    paddingTop: '8rem',
+    paddingTop: '107px',
   },
   advantagesContent: {
     '& .dashboard__preview': {
       borderBottom: '3px solid #2E2E2E',
       '& .text': {
         '& .title': {
-          fontSize: '3.5rem',
-          fontWeight: '700',
-          lineHeight: '1',
           margin: '2rem 0',
+          fontWeight: '700',
+          fontSize: '32px',
+          lineHeight: '30px',
+          maxWidth: '218px',
           '& span': {
-            fontSize: '3.5rem',
-            fontWeight: '700',
-            lineHeight: '1',
+            fontWeight: ' 700',
+            fontSize: '32px',
+            lineHeight: '30px',
+            background: 'linear-gradient(270deg, #FE8888 27.16%, #8066FF 97.86%)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            backgroundClip: 'text',
+            textFillColor: 'transparent',
           },
         },
         '& .subtitle': {
           display: 'flex',
           alignItems: 'center',
           '& img': {
-            width: '1.4rem',
-
+            width: '14px',
+            height: '14px',
           },
           '& h2': {
-            fontSize: '1rem',
+            fontWeight: ' 700',
+            fontSize: '12px',
             marginLeft: '.9rem',
           },
         },
@@ -41,13 +48,40 @@ export default makeStyles(() => ({
       },
     },
     '& button.signup__btn': {
-      borderRadius: '10px',
-      border: '2px solid #FE8888',
       color: 'white',
+      height: '44px',
+      width: '143px',
+      border: '3px solid #FE8888',
+      borderRadius: '10px',
       textTransform: 'none',
-      fontSize: '1.5rem',
-      fontWeight: '600',
-      padding: '.5rem 2rem',
+      fontSize: '16px',
+      letterSpacing: '0.4px',
+      fontWeight: '700',
+    },
+  },
+
+  '@media (min-width:600px)': {
+    advantagesContent: {
+      '& .dashboard__preview': {
+        borderBottom: '3px solid #2E2E2E',
+        '& .text': {
+          '& .title': {
+            maxWidth: '387px',
+            fontSize: '44px',
+            lineHeight: '42px',
+            '& span': {
+              fontSize: '44px',
+              lineHeight: '42px',
+            },
+          },
+        },
+      },
+      '& button.signup__btn': {
+        width: '183px',
+        height: '52px',
+        borderRadius: '8px',
+        fontSize: '20px',
+      },
     },
   },
 
@@ -83,11 +117,12 @@ export default makeStyles(() => ({
         display: 'flex',
         justifyContent: 'space-between',
         gap: '3rem',
+        marginTop: '35px',
       },
-      '& .text .signup__btn': {
-        padding: '.2rem 1.2rem',
-        fontSize: '1.3rem',
-        fontWeight: '500',
+      '& button.signup__btn': {
+        width: '180px',
+        height: '52px',
+        fontSize: '20px',
       },
     },
   },
