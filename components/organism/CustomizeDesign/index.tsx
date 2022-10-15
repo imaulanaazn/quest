@@ -5,7 +5,7 @@ import useStyles from './style';
 export default function CustomizeDesign() {
   const classes = useStyles();
   return (
-    <Box className={classes.fasterContainer}>
+    <Box className={`${classes.fasterContainer} container`}>
       <Box className={classes.fasterContent}>
         <Box className="text">
           <Box className="subtitle">
@@ -19,10 +19,9 @@ export default function CustomizeDesign() {
             based design system
           </Typography>
           <Typography className="description">
-            Your designers and developers can iterate independently.
-            Quest seamlessly brings it all together without any conflicts.
-            For example, if your designer has 3 different ideas for variations,
-            they can build all 3 without any developer involvement.
+            Completely & easily style Material UI components in Figma
+            based on our Quest Design Kit. Design custom components using
+            the design system to export React code.
           </Typography>
         </Box>
       </Box>

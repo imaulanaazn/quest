@@ -34,7 +34,7 @@ export default function reactapp() {
       <JoinTheFuture />
       <Box sx={{ backgroundColor: '#171717', textAlign: 'center', padding: '7rem 0' }}>
         <Typography sx={{
-          color: '#FE8888', fontSize: '2.2rem', fontWeight: '600', marginBottom: '1rem',
+          color: '#FE8888', fontSize: '38px', fontWeight: '700', marginBottom: '1rem',
         }}
         >
           Build better
@@ -44,12 +44,13 @@ export default function reactapp() {
           variant="outlined"
           sx={{
             color: 'white',
-            height: { xs: '3.5rem', sm: '3rem' },
+            width: { xs: '143px', sm: '183px' },
+            height: { xs: '44px', sm: '52px' },
             border: '3px solid #FE8888',
             borderRadius: '10px',
             textTransform: 'none',
-            fontSize: { xs: '1.4rem', sm: '1.2rem' },
-            fontWeight: '600',
+            fontSize: { xs: '16', sm: '20px' },
+            fontWeight: '700',
             padding: '5px 15px',
           }}
         >

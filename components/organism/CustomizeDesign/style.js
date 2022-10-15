@@ -4,22 +4,20 @@ export default makeStyles(() => ({
   fasterContainer: {
     backgroundColor: '#171717',
     color: 'white',
-    padding: '6rem 0',
-
+    paddingTop: '46px 0 40px',
   },
   fasterContent: {
-    width: '70%',
     margin: 'auto',
     '& .text': {
       '& .title': {
-        fontSize: '3.5rem',
-        fontWeight: '700',
-        lineHeight: '1',
-        margin: '2rem 0 1.5rem',
+        fontWeight: ' 700',
+        fontSize: '30px',
+        lineHeight: '30px',
+        margin: '19px 0',
         '& span': {
-          fontSize: '3.5rem',
-          fontWeight: '700',
-          lineHeight: '1',
+          fontWeight: ' 700',
+          fontSize: '30px',
+          lineHeight: '30px',
           color: '#FE8888',
         },
       },
@@ -27,17 +25,20 @@ export default makeStyles(() => ({
         display: 'flex',
         alignItems: 'center',
         '& img': {
-          width: '1.4rem',
-
+          width: '14px',
+          height: '14px',
         },
         '& h2': {
-          fontSize: '1rem',
+          fontWeight: ' 700',
+          fontSize: '12px',
+          lineHeight: '30px',
           marginLeft: '.9rem',
         },
       },
       '& .description': {
-        fontSize: '1.5rem',
-        fontWeight: '500',
+        fontWeight: ' 600',
+        fontSize: '16px',
+        lineHeight: '26px',
       },
     },
   },
@@ -46,14 +47,38 @@ export default makeStyles(() => ({
     fasterContent: {
       padding: '0 2.6rem',
       width: '100%',
+      '& .text': {
+        '& .title': {
+          fontSize: '46px',
+          lineHeight: '47px',
+          '& span': {
+            fontSize: '46px',
+            lineHeight: '47px',
+          },
+        },
+        '& .description': {
+          fontSize: '18px',
+          lineHeight: '26px',
+        },
+      },
     },
   },
 
   '@media (min-width: 900px)': {
     fasterContent: {
       padding: '0',
-      width: '70%',
+      maxWidth: 'max-content',
+      margin: 'auto',
+      '& .text': {
+        '& .title': {
+          maxWidth: '741px',
+        },
+        '& .description': {
+          fontSize: '20px',
+          lineHeight: '30px',
+          maxWidth: '521px',
+        },
+      },
     },
   },
-
 }));

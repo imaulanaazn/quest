@@ -10,21 +10,26 @@ interface AdvantagesProps{
 const useStyles = makeStyles(() => ({
   cardContainer: {
     '& h2.service__card': {
-      fontWeight: '600',
-      fontSize: '1.2rem',
-      padding: '1.8rem 0',
+      fontWeight: ' 700',
+      fontSize: '22px',
+      lineHeight: '22px',
+      padding: '45px 0 5px',
     },
     '& p': {
-      fontWeight: '500',
-      fontSize: '1rem',
-      maxWidth: '20rem',
+      fontWeight: ' 600',
+      fontSize: '16px',
+      lineHeight: '26px',
+      maxWidth: '200px',
     },
   },
 
   '@media (min-width:600px)': {
     cardContainer: {
+      flex: '1',
       '& p': {
         maxWidth: '30rem',
+        fontSize: '18px',
+        lineHeight: '26px',
       },
     },
   },
@@ -33,11 +38,13 @@ const useStyles = makeStyles(() => ({
     cardContainer: {
       flex: '1',
       '& h2.service__card': {
-        fontSize: '1.4rem',
-        padding: '1.2rem 0',
+        fontSize: '26px',
+        lineHeight: '30px',
+        padding: '46px 0 5px',
       },
       '& p': {
-        fontSize: '1rem',
+        fontSize: '20px',
+        lineHeight: '30px',
       },
     },
   },

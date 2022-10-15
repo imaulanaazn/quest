@@ -5,7 +5,7 @@ import useStyles from './style';
 export default function FasterInovation() {
   const classes = useStyles();
   return (
-    <Box className={classes.fasterContainer}>
+    <Box className={`${classes.fasterContainer} container`}>
       <Box className={classes.fasterContent}>
         <Box className="text">
           <Box className="subtitle">

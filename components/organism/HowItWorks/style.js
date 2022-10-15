@@ -4,24 +4,24 @@ export default makeStyles(() => ({
   HowItContainer: {
     backgroundColor: '#171717',
     color: 'white',
-    paddingTop: '6rem',
-    paddingBottom: '6rem',
+    paddingTop: '70px',
+    paddingBottom: '70px',
   },
   HowItContent: {
     '& > img': {
-      width: '80%',
+      width: '228.95px',
       marginBottom: '2rem',
     },
     '& .text': {
       '& .title': {
-        fontSize: '3.5rem',
-        fontWeight: '700',
-        lineHeight: '1',
-        margin: '2rem 0 1.5rem',
+        fontWeight: ' 700',
+        fontSize: '30px',
+        lineHeight: '30px',
+        margin: '24px 0 22px',
         '& span': {
-          fontSize: '3.5rem',
-          fontWeight: '700',
-          lineHeight: '1',
+          fontWeight: ' 700',
+          fontSize: '30px',
+          lineHeight: '30px',
           color: '#FE8888',
         },
       },
@@ -29,25 +29,37 @@ export default makeStyles(() => ({
         display: 'flex',
         alignItems: 'center',
         '& img': {
-          width: '1.4rem',
-
+          width: '14px',
+          height: '14px',
         },
         '& h2': {
-          fontSize: '1rem',
+          fontWeight: ' 700',
+          fontSize: '12px',
+          lineHeight: '30px',
           marginLeft: '.9rem',
         },
       },
       '& .description': {
-        fontSize: '1.5rem',
-        maxWidth: '400px',
-        fontWeight: '500',
+        fontWeight: ' 600',
+        fontSize: '16px',
+        lineHeight: '26px',
       },
     },
     '& .tab__btn__container': {
-      padding: '0 2rem',
+      '& .MuiTabs-flexContainer': {
+        flexWrap: 'wrap',
+      },
+      'div.MuiTab-root': {
+        minWidth: '400px',
+        padding: '0',
+      },
       '& button': {
         flex: '1',
         color: '#FFFFFF80',
+        fontWeight: '700',
+        fontSize: '11px',
+        lineHeight: '17px',
+        letterSpacing: '0.3px',
       },
       '& button.Mui-selected': {
         color: '#FE8888',
@@ -76,8 +88,26 @@ export default makeStyles(() => ({
         width: '66%',
       },
       '& .text': {
+        '& .title': {
+          fontSize: '52px',
+          lineHeight: '52px',
+        },
         '& .description': {
           maxWidth: '100%',
+          fontSize: ' 18px',
+          lineHeight: ' 26px',
+        },
+      },
+      '& .tab__btn__container': {
+        '& button': {
+          fontSize: '13px',
+          lineHeight: '20px',
+        },
+      },
+      '& .tab__content': {
+        '& p': {
+          fontSize: '18px',
+          lineHeight: '22px',
         },
       },
     },
@@ -86,7 +116,21 @@ export default makeStyles(() => ({
   '@media (min-width: 900px)': {
     HowItContent: {
       '& > img': {
-        width: '60%',
+        width: '55%',
+      },
+      '& .text': {
+        '& .description': {
+          maxWidth: '600px',
+          fontSize: '20px',
+          lineHeight: '30px',
+        },
+        '& .tab__content': {
+          '& p': {
+            fontSize: '22px',
+            lineHeight: '26px',
+            maxWidth: '504px',
+          },
+        },
       },
     },
   },

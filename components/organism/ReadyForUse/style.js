@@ -11,14 +11,14 @@ export default makeStyles(() => ({
     '& .dashboard__preview': {
       '& .text': {
         '& .title': {
-          fontSize: '3.5rem',
-          fontWeight: '700',
-          lineHeight: '1',
-          margin: '2rem 0 1.5rem',
+          fontWeight: ' 700',
+          fontSize: '30px',
+          lineHeight: '30px',
+          margin: '22px 0 16px',
           '& span': {
-            fontSize: '3.5rem',
-            fontWeight: '700',
-            lineHeight: '1',
+            fontWeight: ' 700',
+            fontSize: '30px',
+            lineHeight: '30px',
             color: '#FE8888',
           },
         },
@@ -26,8 +26,8 @@ export default makeStyles(() => ({
           display: 'flex',
           alignItems: 'center',
           '& img': {
-            width: '1.4rem',
-
+            width: '14px',
+            height: '14px',
           },
           '& h2': {
             fontSize: '1rem',
@@ -35,15 +35,15 @@ export default makeStyles(() => ({
           },
         },
         '& .description': {
-          fontSize: '1.5rem',
-          maxWidth: '400px',
-          fontWeight: '500',
+          fontWeight: ' 600',
+          fontSize: '16px',
+          lineHeight: '26px',
         },
       },
       '& .thumb__container': {
         width: '106%',
         transform: 'translateX(-3%)',
-        height: '35.5rem',
+        height: '363px',
         backgroundImage: 'url("images/code img.png")',
         backgroundSize: 'cover',
         marginTop: '2.5rem',
@@ -56,9 +56,18 @@ export default makeStyles(() => ({
     readyForContent: {
       '& .dashboard__preview': {
         '& .text': {
+          '& .title': {
+            fontSize: '52px',
+            lineHeight: '52px',
+            '& span': {
+              fontSize: '52px',
+              lineHeight: '52px',
+            },
+          },
           '& .description': {
             maxWidth: '100%',
-            fontSize: '1.4rem',
+            fontSize: '16px',
+            lineHeight: '26px',
           },
         },
         '& .thumb__container': {
@@ -81,10 +90,16 @@ export default makeStyles(() => ({
         '& .text': {
           width: '50%',
           '& .title': {
-            fontSize: '2.5rem',
+            fontSize: '52px',
+            lineHeight: '52px',
             marginTop: '1.5rem',
             '& span': {
-              fontSize: '2.5rem',
+              fontSize: '52px',
+              lineHeight: '52px',
+            },
+            '& .description': {
+              fontSize: '20px',
+              lineHeight: '30px',
             },
           },
           '& .subtitle': {

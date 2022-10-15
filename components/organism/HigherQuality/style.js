@@ -10,14 +10,15 @@ export default makeStyles(() => ({
   higherContent: {
     '& .text': {
       '& .title': {
-        fontSize: '3.5rem',
-        fontWeight: '700',
-        lineHeight: '1',
-        margin: '2rem 0 1.5rem',
+        fontWeight: ' 700',
+        fontSize: '30px',
+        lineHeight: '30px',
+        margin: '10px 0',
+        maxWidth: '185px',
         '& span': {
-          fontSize: '3.5rem',
-          fontWeight: '700',
-          lineHeight: '1',
+          fontWeight: ' 700',
+          fontSize: '30px',
+          lineHeight: '30px',
           color: '#FE8888',
         },
       },
@@ -25,17 +26,21 @@ export default makeStyles(() => ({
         display: 'flex',
         alignItems: 'center',
         '& img': {
-          width: '1.4rem',
-
+          width: '14px',
+          height: '14px',
         },
         '& h2': {
-          fontSize: '1rem',
+          fontWeight: ' 700',
+          fontSize: '12px',
+          lineHeight: '30px',
           marginLeft: '.9rem',
         },
       },
       '& .description': {
-        fontSize: '1.5rem',
-        fontWeight: '500',
+        fontWeight: ' 600',
+        fontSize: '16px',
+        lineHeight: '26px',
+        marginBottom: '30px',
       },
     },
     '& > img': {
@@ -45,11 +50,40 @@ export default makeStyles(() => ({
   },
 
   '@media (min-width: 600px)': {
+    higherContainer: {
+      padding: '70px 40px',
+    },
     higherContent: {
+      '& .text': {
+        '& .title': {
+          fontSize: '52px',
+          lineHeight: '50px',
+          maxWidth: '100%',
+          '& span': {
+            fontSize: '52px',
+            lineHeight: '50px',
+          },
+        },
+      },
       '& .advantages': {
         display: 'flex',
         gap: '2rem',
       },
     },
   },
+
+  '@media (min-width: 900px)': {
+    higherContainer: {
+      padding: '70px 181px',
+      '& .description': {
+        fontSize: '20px',
+        lineHeight: '30px',
+      },
+      '& .text': {
+        maxWidth: 'max-content',
+        margin: 'auto',
+      },
+    },
+  },
+
 }));

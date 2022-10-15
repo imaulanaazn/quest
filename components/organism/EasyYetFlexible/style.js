@@ -4,20 +4,21 @@ export default makeStyles(() => ({
   easyYetContainer: {
     backgroundColor: '#171717',
     color: 'white',
-    paddingTop: '6rem',
-    paddingBottom: '6rem',
+    paddingTop: '72px',
+    paddingBottom: '72px',
   },
   easyYetContent: {
     '& .text': {
       '& .title': {
-        fontSize: '3.5rem',
+        fontSize: '30px',
+        lineHeight: '30px',
         fontWeight: '700',
-        lineHeight: '1',
         marginTop: '2rem',
+        maxWidth: '269px',
         '& span': {
-          fontSize: '3.5rem',
+          fontSize: '30px',
+          lineHeight: '30px',
           fontWeight: '700',
-          lineHeight: '1',
           color: '#FE8888',
         },
       },
@@ -25,27 +26,30 @@ export default makeStyles(() => ({
         display: 'flex',
         alignItems: 'center',
         '& img': {
-          width: '1.4rem',
+          width: '14px',
+          height: '14px',
         },
         '& h2': {
-          fontSize: '1rem',
+          fontSize: '12px',
+          lineHeight: '30px',
           marginLeft: '.9rem',
         },
       },
       '& .description': {
-        fontSize: '1.5rem',
-        maxWidth: '400px',
-        fontWeight: '500',
-        margin: '2rem 0',
+        fontWeight: ' 600',
+        fontSize: '16px',
+        lineHeight: '26px',
+        margin: '20px 0',
       },
       '& .getstarted': {
-        fontSize: '1.5rem',
         maxWidth: '20rem',
-        fontWeight: '500',
+        fontWeight: ' 600',
+        fontSize: '16px',
+        lineHeight: '22px',
         '& span': {
-          fontSize: '1.5rem',
-          maxWidth: '460px',
-          fontWeight: '500',
+          maxWidth: '20rem',
+          fontWeight: ' 600',
+          fontSize: '16px',
           color: '#FE8888',
         },
       },
@@ -56,20 +60,27 @@ export default makeStyles(() => ({
     easyYetContent: {
       '& .text': {
         '& .title': {
-          fontSize: '2.6rem',
+          fontSize: '52px',
+          lineHeight: '52px',
+          maxWidth: '100%',
+          marginTop: '1.2rem',
           '& span': {
-            fontSize: '2.6rem',
+            fontSize: '52px',
+            lineHeight: '52px',
           },
         },
         '& .description': {
-          fontSize: '1.4rem',
+          fontSize: '18px',
+          lineHeight: '26px',
           maxWidth: '100%',
         },
         '& .getstarted': {
-          fontSize: '1.4rem',
+          ffontSize: '18px',
+          lineHeight: '26px',
           maxWidth: '100%',
           '& span': {
-            fontSize: '1.4rem',
+            ffontSize: '18px',
+            lineHeight: '26px',
           },
         },
       },
@@ -79,11 +90,20 @@ export default makeStyles(() => ({
   '@media (min-width: 900px)': {
     '& .text': {
       '& .title': {
-        maxWidth: '29rem',
+        maxWidth: '577px',
       },
       '& .description': {
-        fontSize: '1.4rem',
-        maxWidth: '45rem',
+        fontSize: '20px',
+        lineHeight: '30px',
+        maxWidth: '609px',
+      },
+      '& .getstarted': {
+        fontSize: '20px',
+        lineHeight: '30px',
+        '& span': {
+          fontSize: '20px',
+          lineHeight: '30px',
+        },
       },
     },
   },

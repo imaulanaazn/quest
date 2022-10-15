@@ -9,9 +9,9 @@ export default makeStyles(() => ({
   },
   feautresContent: {
     '& .title': {
-      fontSize: '3rem',
-      fontWeight: '600',
-      textAlign: 'center',
+      fontWeight: ' 700',
+      fontSize: '30px',
+      lineHeight: '56px',
     },
     '& .features__list': {
       '& ul': {
@@ -20,8 +20,10 @@ export default makeStyles(() => ({
         padding: '0',
         '& li': {
           borderBottom: '1px solid white',
-          fontSize: '1.5rem',
-          padding: '1.5rem 0',
+          fontWeight: ' 600',
+          fontSize: '16px',
+          lineHeight: '26px',
+          padding: '15px 0',
         },
       },
       '& > div:last-child ul': {
@@ -34,14 +36,12 @@ export default makeStyles(() => ({
 
   '@media (min-width: 600px)': {
     feautresContent: {
+      '& .title': {
+        textAlign: 'center',
+      },
       '& .features__list': {
         display: 'flex',
         gap: '3rem',
-        '& ul': {
-          '& li': {
-            fontSize: '1rem',
-          },
-        },
         '& > div': {
           flex: '1',
         },
@@ -58,6 +58,12 @@ export default makeStyles(() => ({
     feautresContent: {
       '& .features__list': {
         gap: '3rem',
+        '& ul': {
+          '& li': {
+            fontSize: '20px',
+            lineHeight: '26px',
+          },
+        },
       },
     },
   },

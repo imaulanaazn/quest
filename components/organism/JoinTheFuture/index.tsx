@@ -5,7 +5,7 @@ import useStyles from './style';
 export default function JoinTheFuture() {
   const classes = useStyles();
   return (
-    <Box className={classes.joinContainer}>
+    <Box className={`${classes.joinContainer} container`}>
       <Box className={classes.joinContent}>
         <Box className="text">
           <Box className="subtitle">

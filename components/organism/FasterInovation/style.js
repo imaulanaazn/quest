@@ -4,22 +4,20 @@ export default makeStyles(() => ({
   fasterContainer: {
     backgroundColor: '#171717',
     color: 'white',
-    padding: '6rem 0',
-
+    paddingTop: '63px',
+    paddingBottom: '63px',
   },
   fasterContent: {
-    width: '70%',
-    margin: 'auto',
     '& .text': {
       '& .title': {
-        fontSize: '3.5rem',
-        fontWeight: '700',
-        lineHeight: '1',
-        margin: '2rem 0 1.5rem',
+        fontWeight: ' 700',
+        fontSize: '30px',
+        lineHeight: '30px',
+        margin: '24px 0 18px',
         '& span': {
-          fontSize: '3.5rem',
-          fontWeight: '700',
-          lineHeight: '1',
+          fontWeight: ' 700',
+          fontSize: '30px',
+          lineHeight: '30px',
           color: '#FE8888',
         },
       },
@@ -27,32 +25,62 @@ export default makeStyles(() => ({
         display: 'flex',
         alignItems: 'center',
         '& img': {
-          width: '1.4rem',
-
+          width: '14px',
+          height: '14px',
         },
         '& h2': {
-          fontSize: '1rem',
+          fontWeight: ' 700',
+          fontSize: '12px',
+          lineHeight: '30px',
           marginLeft: '.9rem',
         },
       },
       '& .description': {
-        fontSize: '1.5rem',
-        fontWeight: '500',
+        fontWeight: ' 600',
+        fontSize: '16px',
+        lineHeight: '26px',
       },
     },
   },
 
   '@media (min-width: 600px)': {
+    fasterContainer: {
+      paddingTop: '73px',
+      paddingBottom: '73px',
+    },
     fasterContent: {
-      padding: '0 2.6rem',
       width: '100%',
+      '& .text': {
+        '& .title': {
+          fontSize: '52px',
+          lineHeight: '52px',
+          margin: '18px 0',
+          '& span': {
+            fontSize: '52px',
+            linHeight: '52px',
+          },
+        },
+        '& .description': {
+          fontSize: '18px',
+          lineHeight: '26px',
+        },
+      },
     },
   },
 
   '@media (min-width: 900px)': {
+    fasterContainer: {
+      paddingTop: '83px',
+      paddingBottom: '83px',
+    },
     fasterContent: {
       padding: '0',
       width: '70%',
+      margin: '0 auto',
+      '& .description': {
+        fontSize: '20px',
+        lineHeight: '30px',
+      },
     },
   },
 

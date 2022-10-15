@@ -1,4 +1,3 @@
-import { ClassNames } from '@emotion/react';
 import React from 'react';
 import { Box, Typography } from '@mui/material';
 import useStyles from './style';
