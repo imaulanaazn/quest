@@ -8,7 +8,7 @@ export default function SeeQuest() {
     <Box className={`${classes.SeeQuestContaier} container`}>
       <Box className="subtitle">
         <img src="images/bolt.svg" alt="bolt icon" />
-        <Typography variant="h2">SEE QUEST IN ACTION</Typography>
+        <Typography variant="h2">SEE QUEST FOR WEBSITES IN ACTION</Typography>
       </Box>
       <iframe
         src="https://www.youtube.com/embed/I6ypD7qv3Z8"

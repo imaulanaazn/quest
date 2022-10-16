@@ -10,22 +10,25 @@ export default makeStyles(() => ({
       alignItems: 'center',
       justifyContent: 'center',
       '& img': {
-        width: '1.4rem',
+        width: '14px',
+        height: '14px',
       },
       '& h2': {
-        fontSize: '1rem',
+        fontWeight: ' 700',
+        fontSize: '12px',
+        lineHeight: '30px',
         marginLeft: '.9rem',
       },
     },
     '& iframe': {
       width: '100%',
-      height: '16rem',
-      marginTop: '1rem',
+      height: '194px',
+      marginTop: '0.6rem',
     },
 
     '@media (min-width: 600px)': {
       '& iframe': {
-        height: '22rem',
+        height: '337px',
       },
     },
 
@@ -36,7 +39,7 @@ export default makeStyles(() => ({
         },
       },
       '& iframe': {
-        height: '34rem',
+        height: '607px',
         marginTop: '2rem',
       },
     },

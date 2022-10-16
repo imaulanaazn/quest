@@ -4,45 +4,60 @@ export default makeStyles(() => ({
   PricingBuildContainer: {
     backgroundColor: '#171717',
     color: 'white',
-    paddingTop: '6rem',
-    paddingBottom: '4rem',
+    padding: '50px 32px',
   },
   PricingBuildContent: {
     '& .title': {
-      fontSize: '2.5rem',
-      fontWeight: '700',
-      lineHeight: '1',
-      marginTop: '2rem',
+      fontWeight: ' 700',
+      fontSize: '30px',
+      lineHeight: '32px',
       maxWidth: '14rem',
     },
     '& .description': {
-      fontSize: '1.5rem',
-      maxWidth: '400px',
-      fontWeight: '500',
-      margin: '1rem 0 2rem',
+      fontWeight: ' 400',
+      fontSize: '16px',
+      lineHeight: '24px',
+      margin: '10px 0 20px',
     },
     '& .learn__more': {
-      fontSize: '1.5rem',
-      fontWeight: '500',
+      fontWeight: ' 600',
+      fontSize: '16px',
+      lineHeight: '30px',
       '& span': {
-        fontSize: '1.5rem',
-        fontWeight: '500',
+        fontWeight: ' 600',
+        fontSize: '16px',
+        lineHeight: '30px',
         color: '#FE8888',
       },
     },
     '& .switch': {
-      margin: '5rem 0 2rem',
+      margin: '70px 0 30px',
     },
   },
 
   '@media (min-width: 600px)': {
+    cardWrapper: {
+      display: 'flex',
+      gap: '36px',
+    },
+    PricingBuildContainer: {
+      padding: '68px 40px',
+    },
     PricingBuildContent: {
       '& .title': {
-        fontSize: '2.5rem',
+        fontSize: '40px',
+        lineHeight: '36px',
       },
       '& .description': {
-        fontSize: '1.4rem',
+        fontSize: '18px',
+        lineHeight: '26px',
         maxWidth: '100%',
+      },
+      '& .learn__more': {
+        fontSize: '16px',
+        '& span': {
+          fontSize: '16px',
+        },
       },
     },
     cardContainer: {
@@ -53,16 +68,11 @@ export default makeStyles(() => ({
 
   '@media (min-width: 900px)': {
     PricingBuildContainer: {
-      paddingTop: '3rem',
+      padding: '68px 180px',
     },
     PricingBuildContent: {
       paddingTop: '0rem',
       '& .title': {
-        fontSize: '2.5rem',
-        maxWidth: '100%',
-      },
-      '& .description': {
-        fontSize: '1.4rem',
         maxWidth: '100%',
       },
     },

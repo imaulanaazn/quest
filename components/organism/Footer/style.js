@@ -4,7 +4,8 @@ export default makeStyles(() => ({
   footerContainer: {
     backgroundColor: '#171717',
     color: 'white',
-    padding: '10rem 6rem 10rem',
+    paddingTop: '150px',
+    paddingBottom: '110px',
   },
   footerContent: {
     marginTop: '1rem',
@@ -19,10 +20,12 @@ export default makeStyles(() => ({
       '& li a': {
         textDecoration: 'none',
         color: '#979797',
-        fontSize: '1.2rem',
-        lineHeight: '1.8',
+        fontWeight: ' 700',
+        fontSize: '16px',
+        lineHeight: '24px',
       },
       '& li.list__title a': {
+        fontWeight: ' 900',
         color: 'white',
       },
     },
@@ -44,8 +47,8 @@ export default makeStyles(() => ({
 
   '@media (min-width: 600px)': {
     footerContainer: {
-      padding: '10rem 3rem 10rem',
       display: 'flex',
+      gap: '2rem',
       '& :first-child': {
         flex: '1',
       },
@@ -74,7 +77,7 @@ export default makeStyles(() => ({
 
   '@media (min-width: 900px)': {
     footerContainer: {
-      padding: '10rem 6rem 10rem',
+      gap: '0rem',
     },
     footerContent: {
       flex: 'initial',

@@ -4,58 +4,79 @@ export default makeStyles(() => ({
   offerContainer: {
     backgroundColor: '#171717',
     color: 'white',
-    paddingTop: '6rem',
-    paddingBottom: '4rem',
+    paddingTop: '50px',
+    paddingBottom: '50px',
   },
   offerContent: {
     position: 'relative',
     color: 'white',
     '& img.bolt__icon': {
-      width: '2rem',
+      width: '24px',
+      height: '24px',
       position: 'absolute',
       top: '0',
       left: '0',
       transform: 'translate(-110%,10%)',
     },
     '& h1.title': {
-      fontWeight: '700',
-      lineHeight: '1',
-      fontSize: '3.5rem',
-      maxWidth: '23rem',
+      fontWeight: ' 700',
+      fontSize: '36px',
+      lineHeight: '37px',
+      maxWidth: '228px',
       '& span': {
-        fontWeight: '700',
-        lineHeight: '1',
-        fontSize: '3.5rem',
+        fontWeight: ' 700',
+        fontSize: '36px',
+        lineHeight: '37px',
         color: '#FE8888',
       },
     },
     '& div': {
       alignItems: 'center',
-      marginTop: '3rem',
+      marginTop: '25px',
       '& p.moto': {
-        fontSize: '1.8rem',
-        fontWeight: '500',
+        fontWeight: ' 700',
+        fontSize: '16px',
+        lineHeight: '28px',
         width: '80%',
       },
       '& button.signup__btn': {
         color: 'white',
-        height: '3.5rem',
+        width: '149px',
+        height: ' 44px',
         border: '3px solid #FE8888',
-        borderRadius: '10px',
+        borderRadius: '8px',
         textTransform: 'none',
-        fontSize: '1.4rem',
-        fontWeight: '600',
-        marginTop: '3rem',
-        padding: '5px 15px',
+        fontWeight: ' 700',
+        fontSize: '16px',
+        lineHeight: '20px',
+        marginTop: '25px',
       },
     },
   },
 
   '@media (min-width: 600px)': {
     offerContent: {
+      '& img.bolt__icon': {
+        width: '49px',
+        height: '49px',
+      },
+      '& h1.title': {
+        fontSize: '60px',
+        lineHeight: '56px',
+        maxWidth: '380px',
+        '& span': {
+          fontSize: '60px',
+          lineHeight: '56px',
+        },
+      },
       '& div': {
         '& p.moto': {
-          fontSize: '1.4rem',
+          fontSize: '18px',
+        },
+        '& button.signup__btn': {
+          width: '188px',
+          height: '52px',
+          fontSize: '20px',
         },
       },
     },
@@ -63,9 +84,18 @@ export default makeStyles(() => ({
 
   '@media (min-width: 900px)': {
     offerContent: {
+      '& h1.title': {
+        fontSize: '78px',
+        lineHeight: '72px',
+        maxWidth: '505px',
+        '& span': {
+          fontSize: '78px',
+          lineHeight: '72px',
+        },
+      },
       '& div': {
         '& p.moto': {
-          width: '20rem',
+          maxWidth: '375px',
         },
       },
     },

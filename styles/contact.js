@@ -7,18 +7,21 @@ export default makeStyles(() => ({
     backgroundColor: '#171717',
     color: 'white',
     '& h1': {
-      fontSize: '3rem',
-      fontWeight: '600',
+      fontWeight: ' 700',
+      fontSize: '30px',
+      lineHeight: '30px',
     },
     '& > div > p': {
-      padding: '.5rem 0 2.5rem',
-      fontSize: '1.6rem',
+      padding: '.5rem 0 1.6rem',
+      fontWeight: ' 600',
+      fontSize: '18px',
+      lineHeight: '24px',
     },
     '& > div.inputFieldSide .MuiBox-root': {
       border: '1px solid white',
       flexDirection: 'column',
       gap: '1.5rem',
-      padding: '3rem 2.5rem',
+      padding: '1.8rem 1.4rem',
       borderRadius: '15px',
     },
     '& .MuiFormControl-root': {
@@ -48,22 +51,26 @@ export default makeStyles(() => ({
     '& div.flex__container': {
       width: '100%',
       justifyContent: 'space-between',
-      marginTop: '2rem',
+      marginTop: '1.5rem',
       alignItems: 'center',
 
       '& p': {
-        fontSize: '1.3rem',
+        fontWeight: ' 600',
+        fontSize: '18px',
+        lineHeight: '24px',
         color: '#FE8888',
       },
 
       '& button': {
-        fontSize: '1.3rem',
+        width: '100px',
+        height: ' 44px',
+        fontWeight: ' 700',
+        fontSize: '16px',
+        lineHeight: '20px',
         backgroundColor: 'white',
         border: '3px solid #FE8888',
         color: 'black',
         borderRadius: '8px',
-        fontWeight: '700',
-        padding: '.4rem 2.2rem',
         textTransform: 'inherit',
       },
     },
@@ -74,41 +81,24 @@ export default makeStyles(() => ({
       display: 'flex',
       gap: '1.5rem',
       '& h1': {
-        fontSize: '2.8rem',
+        fontSize: '46px',
+        lineHeight: '42px',
       },
       '& > div > p': {
-        fontSize: '1.2rem',
+        fontSize: '20px',
+        lineHeight: '24px',
       },
       '& > div': {
         flex: '1',
       },
-
-      '& > div.inputFieldSide .MuiBox-root': {
-        padding: '2rem 1.5rem',
-      },
       '& .MuiFormControl-root': {
         '& > .MuiInputBase-root': {
           '& input': {
-            fontSize: '1.3rem',
+            fontSize: '1.2rem',
           },
         },
-        '& label.MuiFormLabel-root': {
-          fontSize: '1.3rem',
-        },
         '& p.MuiFormHelperText-root': {
-          padding: '.5rem 0 0rem',
-          fontSize: '1rem',
-        },
-      },
-      '& div.flex__container': {
-        '& p': {
-          fontSize: '1.15rem',
-        },
-
-        '& button': {
-          padding: '.1rem 1rem',
-          fontSize: '1.15rem',
-
+          fontSize: '0.9rem',
         },
       },
     },
@@ -116,8 +106,17 @@ export default makeStyles(() => ({
 
   '@media (min-width: 900px)': {
     flexContainer: {
+      '& h1': {
+        fontSize: '52px',
+        lineHeight: '42px',
+      },
       '& > div > p': {
+        fontSize: '20px',
+        lineHeight: '24px',
         maxWidth: '18rem',
+      },
+      '& > div': {
+        flex: '1',
       },
     },
   },

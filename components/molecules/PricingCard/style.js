@@ -3,103 +3,104 @@ import { makeStyles } from '@mui/styles';
 export default makeStyles(() => ({
   card: {
     width: '100%',
-    height: '35rem',
-    borderRadius: '1.2rem',
+    borderRadius: '12px',
     backgroundColor: 'white',
-    padding: '4rem 2.5rem',
-    marginBottom: '3rem',
+    marginBottom: '36px',
+    padding: '32px 30px 56px',
 
     '& > div.MuiChip-root': {
       color: 'white',
-      padding: '.5rem .6rem',
+      padding: '5px .5rem',
 
       '& span': {
-        fontSize: '1.1rem',
+        fontWeight: ' 600',
+        fontSize: '12px',
+        lineHeight: '19px',
       },
     },
 
     '& h2.title': {
       color: '#282727',
-      fontSize: '2.5rem',
+      margin: '25px 0 0px',
+      fontWeight: ' 800',
+      fontSize: '42px',
+      lineHeight: '38px',
     },
 
     '& p.perMonth': {
       color: '#858585',
-      fontSize: '1.5rem',
-      margin: '.4rem 0 1.6rem',
+      fontWeight: ' 600',
+      fontSize: '14px',
+      lineHeight: '30px',
     },
 
     '& button': {
       width: '100%',
       color: 'black',
-      height: '4rem',
-      borderRadius: '1rem',
-      fontSize: '1.5rem',
-      fontWeight: '600',
+      padding: '12px 0',
+      borderRadius: '8px',
+      fontWeight: ' 700',
+      fontSize: '16px',
+      lineHeight: '20px',
       textTransform: 'initial',
+      margin: '12px 0 22px',
     },
 
     '& p.forPerson': {
       color: '#505050',
-      fontSize: '1.5rem',
-      margin: '1.8rem 0 1rem',
+      fontWeight: ' 400',
+      fontSize: '14px',
+      lineHeight: '20px',
+      marginBottom: '10px',
     },
 
     '& p.moto': {
+      fontWeight: '500',
+      fontSize: '14px',
+      lineHeight: '20px',
       color: '#282727',
-      fontWeight: '700',
-      fontSize: '1.5rem',
     },
   },
 
   '@media (min-width: 600px)': {
     card: {
-      padding: '2rem 1rem',
-      '& > div.MuiChip-root': {
-        color: 'white',
-        padding: '.4rem .4rem',
-
-        '& span': {
-          fontSize: '.9rem',
-        },
-      },
-      '& h2.title': {
-        fontSize: '2.3rem',
-      },
+      flex: '1',
+      padding: '32px 30px 111px',
       '& p.perMonth': {
-        fontSize: '1.2rem',
+        fontWeight: '400',
+      },
+      '& p.moto': {
+        fontWeight: '700',
       },
       '& button': {
-        padding: '0',
-        fontSize: '1.2rem',
-      },
-      '& p.forPerson, p.moto': {
-        fontSize: '1.2rem',
+        fontWeight: '700',
+        fontSize: '15px',
       },
     },
   },
 
   '@media (min-width: 900px)': {
     card: {
-      padding: '4rem 2.5rem',
-      '& > div.MuiChip-root': {
-        '& span': {
-          fontSize: '1rem',
-        },
-      },
+      padding: '41px 40px  95px',
       '& h2.title': {
-        fontSize: '2.5rem',
+        fontSize: '38px',
+        lineHeight: '48px',
       },
       '& p.perMonth': {
-        fontSize: '1.1rem',
+        fontSize: '18px',
       },
       '& button': {
-        padding: '0',
-        height: '3rem',
-        borderRadius: '8px',
+        fontWeight: ' 700',
+        fontSize: '16px',
       },
-      '& p.forPerson, p.moto': {
-        fontSize: '1.1rem',
+      '& p.forPerson': {
+        fontWeight: '400',
+        fontSize: '18px',
+        lineHeight: '22px',
+      },
+      '& p.moto': {
+        fontSize: '18px',
+        lineHeight: '22px',
       },
     },
 

@@ -5,7 +5,7 @@ import makeStyles from './style';
 export default function Footer() {
   const classes = makeStyles();
   return (
-    <Box className={classes.footerContainer}>
+    <Box className={`${classes.footerContainer} container`}>
       <Box>
         <img src="images/logo-header.svg" alt="" />
       </Box>

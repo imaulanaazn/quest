@@ -73,7 +73,7 @@ export default function PricingComponents() {
           <Typography sx={{ color: checked ? '#7F7F7F' : 'white' }}>Annual</Typography>
         </Stack>
 
-        <Box className={classes.cardContainer}>
+        <Box className={classes.cardWrapper}>
           <PricingCard label="PRO" price={49} color="#03C3FF" userPerMonth="/ user per month" buttonText="Sign Up" description="Perfect for freelancers and small teams" moto="Export unlimited components" />
           <PricingCard label="TEAM" price={299} color="#FE8888" userPerMonth="/ 10 users per month" buttonText="Contact Sales" description="Best for teams with larger products" moto="Build projects together" />
           <PricingCard label="ENTERPRISE" price="Custom" color="#8066FF" userPerMonth="/  tailored to needs" buttonText="Contact Sales" description="For large companies with custom requirements" moto="Custom setup, training & support manager" />
