@@ -1,6 +1,9 @@
 import { makeStyles } from '@mui/styles';
 
 export default makeStyles(() => ({
+  drawer: {
+    display: 'block',
+  },
   header: {
     width: '100%',
     backgroundColor: '#171717',

@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  Box, Typography, TableContainer, Table, TableHead, TableRow, TableCell, TableBody, Paper,
+  Box, Typography, TableContainer, Table, TableHead, TableRow, TableCell, TableBody,
 } from '@mui/material';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import CancelIcon from '@mui/icons-material/Cancel';

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box } from '@mui/material';
+import Link from 'next/link';
 import makeStyles from './style';
 
 export default function Footer() {
@@ -23,7 +24,6 @@ export default function Footer() {
           <Box>
             <ul>
               <li className="list__title"><a href="/#">Social</a></li>
-              <li><a href="/#">Facebook</a></li>
               <li><a href="/#">Twitter</a></li>
               <li><a href="/#">Medium</a></li>
               <li><a href="/#">Instagram</a></li>
@@ -33,7 +33,7 @@ export default function Footer() {
             <ul>
               <li className="list__title"><a href="/#">Company</a></li>
               <li><a href="/#">Jobs</a></li>
-              <li><a href="/#">Contact Us</a></li>
+              <li><Link href="/contact"><a href="/#">Contact Us</a></Link></li>
             </ul>
           </Box>
         </Box>

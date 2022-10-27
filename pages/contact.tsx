@@ -14,7 +14,7 @@ export default function contact() {
       <Box>
         <Typography variant="h1">Contact us</Typography>
         <Typography>
-          Fill out our form, and we'll try to get back
+          Fill out our form, and we&apos;ll try to get back
           to you within 24 hours.
         </Typography>
       </Box>

@@ -30,7 +30,7 @@ export default function Navbar() {
 
   const toggleDrawer = (
     anchor: Anchor,
-    open: boolean,
+    opened: boolean,
   ) => (event: React.KeyboardEvent | React.MouseEvent) => {
     if (
       event.type === 'keydown'
@@ -40,7 +40,7 @@ export default function Navbar() {
       return;
     }
 
-    setState({ ...state, [anchor]: open });
+    setState({ ...state, [anchor]: opened });
   };
 
   const list = (anchor: Anchor) => (
@@ -65,7 +65,11 @@ export default function Navbar() {
   return (
     <Box component="header" className={`${classes.header} container`}>
       {/* COMPANY LOGO HEADER */}
-      <img className="header__logo" src="/images/logo-header.svg" alt="company logo" />
+      <Link href="/">
+        <Box sx={{ '&:hover': { cursor: 'pointer' } }}>
+          <img className="header__logo" src="/images/logo-header.svg" alt="company logo" />
+        </Box>
+      </Link>
 
       {/* MENU DRAWER */}
       <Box className={classes.drawer}>
@@ -123,10 +127,10 @@ export default function Navbar() {
             <Link href="/figma_plugin">Plugin for Figma</Link>
           </MenuItem>
           <MenuItem onClick={handleClose}>
-            <Link href="/">Docs</Link>
+            <Link href="/samples">Samples</Link>
           </MenuItem>
         </Menu>
-        <Link href="/">
+        <Link href="/pricing">
           <a href="/#" className={classes.navItem}>Pricing</a>
         </Link>
       </Box>

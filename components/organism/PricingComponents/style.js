@@ -1,6 +1,9 @@
 import { makeStyles } from '@mui/styles';
 
 export default makeStyles(() => ({
+  cardWrapper: {
+    display: 'block',
+  },
   PricingBuildContainer: {
     backgroundColor: '#171717',
     color: 'white',

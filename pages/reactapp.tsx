@@ -57,6 +57,7 @@ export default function reactapp() {
           Sign Up Now
         </Button>
       </Box>
+      <Footer />
     </>
   );
 }
