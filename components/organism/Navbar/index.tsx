@@ -1,7 +1,7 @@
 import React from 'react';
 // import Link from '@mui/material/Link';
 import {
-  Box, Button, Menu, MenuItem, Drawer, List, ListItem, ListItemButton, ListItemText,
+  Box, Button, Menu, MenuItem, Drawer, List, ListItem, ListItemButton,
 } from '@mui/material';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -50,14 +50,42 @@ export default function Navbar() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <List>
-        {['React components', 'Websites', 'Plugin for Figma', 'Docs'].map((text) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
+      <List className={classes.menuDrawerList}>
+        <ListItem disablePadding>
+          <ListItemButton>
+            <Link href="/">
+              <a href="/#">Home</a>
+            </Link>
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton>
+            <Link href="/reactapp">
+              <a href="/#">Websites</a>
+            </Link>
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton>
+            <Link href="/offer">
+              <a href="/#">React components</a>
+            </Link>
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton>
+            <Link href="/figma_plugin">
+              <a href="/#">Plugin for Figma</a>
+            </Link>
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton>
+            <Link href="/samples">
+              <a href="/#">Samples</a>
+            </Link>
+          </ListItemButton>
+        </ListItem>
       </List>
     </Box>
   );

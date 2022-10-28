@@ -4,6 +4,12 @@ export default makeStyles(() => ({
   drawer: {
     display: 'block',
   },
+  menuDrawerList: {
+    '& li a': {
+      color: 'white',
+      textDecoration: 'none',
+    },
+  },
   header: {
     width: '100%',
     backgroundColor: '#171717',
